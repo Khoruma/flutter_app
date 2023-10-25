@@ -49,7 +49,9 @@ class ChooseSection extends StatelessWidget {
                 ChooseOption(
                   title: 'Input Validation',
                   subTitle: 'Play around with email input & password input',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/input-validation');
+                  },
                 ),
                 UIHelper.divider(height: 70, thickness: 2),
                 ChooseOption(

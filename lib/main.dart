@@ -3,6 +3,7 @@ import 'package:flutter_bootcamp/core/common/theme.dart';
 import 'package:flutter_bootcamp/ui/pages/choose_section.dart';
 import 'package:flutter_bootcamp/ui/pages/dummy_ui_next_page.dart';
 import 'package:flutter_bootcamp/ui/pages/dummy_ui_page.dart';
+import 'package:flutter_bootcamp/ui/pages/input_validation.dart';
 import 'package:flutter_bootcamp/ui/pages/splah_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
             '/choose-section': (context) => const ChooseSection(),
             '/dummy-ui': (context) => const DummyUiPage(),
             '/dummy-ui-next': (context) => const DummyUiNextPage(),
+            '/input-validation': (context) => const InputValidation(),
           },
         );
       },

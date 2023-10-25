@@ -85,6 +85,10 @@ class AppTheme {
       fontSize: 16.sp,
       fontWeight: FontWeight.bold,
     ),
+    headlineLarge: GoogleFonts.poppins().copyWith(
+      fontSize: 16.sp,
+      fontWeight: FontWeight.bold,
+    ),
     headlineMedium: GoogleFonts.poppins().copyWith(
       fontSize: 14.sp,
       fontWeight: FontWeight.bold,
