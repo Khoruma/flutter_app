@@ -42,7 +42,9 @@ class DummyUiPage extends StatelessWidget {
               ChooseOption(
                 title: 'Next',
                 subTitle: 'Tab Bar, GridView, ListView',
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/dummy-ui-next');
+                },
               ),
               TitleGreen(title: 'Container and Text'),
               const DummyCard(),
