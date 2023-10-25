@@ -4,7 +4,7 @@ class ColorConstant {
   ColorConstant._();
   static const Color primary = Color(0xff0077B6);
   static const Color black = Color(0xff333333);
-  static const Color? whiteColor = Colors.white;
+  static const Color whiteColor = Colors.white;
   static const Color purple = Color(0xff7654CC);
   static Color lightBlue = const Color(0xff96D3F2).withOpacity(0.2);
   static const Color red = Color(0xffED1C2E);

@@ -94,13 +94,13 @@ class AppTheme {
       fontWeight: FontWeight.bold,
     ),
     titleLarge: GoogleFonts.poppins().copyWith(
-      fontSize: 10.sp,
+      fontSize: 20.sp,
       fontWeight: FontWeight.bold,
     ),
     bodyLarge: GoogleFonts.poppins().copyWith(fontSize: 14.sp),
     bodyMedium: GoogleFonts.poppins().copyWith(fontSize: 16.sp),
     titleMedium: GoogleFonts.poppins(fontSize: 18.sp),
-    titleSmall: GoogleFonts.poppins(fontSize: 20.sp),
+    titleSmall: GoogleFonts.poppins(fontSize: 10.sp),
     bodySmall: GoogleFonts.poppins(fontSize: 12.sp),
     labelLarge:
         GoogleFonts.poppins(fontSize: 14.sp, fontWeight: FontWeight.bold),

@@ -149,6 +149,7 @@ class UIHelper {
   }
 
   static double defaultPadding = 28.0;
+  static double paddingContent = 15.0;
 
   static void showToast(String message, {bool isSuccess = false}) {
     Fluttertoast.showToast(
