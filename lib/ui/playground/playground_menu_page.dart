@@ -57,6 +57,15 @@ class PlaygroundMenuPage extends StatelessWidget {
                 ),
                 UIHelper.divider(height: 70, thickness: 2),
                 ChooseOption(
+                  title: 'Counter App',
+                  subTitle:
+                      'Goes to main home page and choose between playground or Pixels ',
+                  onTap: () {
+                    Navigator.pushNamed(context, '/counter');
+                  },
+                ),
+                UIHelper.divider(height: 70, thickness: 2),
+                ChooseOption(
                   title: 'Switch App',
                   subTitle:
                       'Goes to main home page and choose between playground or Pixels ',

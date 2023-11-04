@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/common/theme.dart';
+import 'package:flutter_bootcamp/ui/playground/counter_page.dart';
 import 'package:flutter_bootcamp/ui/playground/dummy_ui_next_page.dart';
 import 'package:flutter_bootcamp/ui/playground/dummy_ui_page.dart';
 import 'package:flutter_bootcamp/ui/playground/input_validation_page.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
             '/dummy-ui-next': (context) => const DummyUiNextPage(),
             '/input-validation': (context) => const InputValidationPage(),
             '/simple-calculator': (context) => const SimpleCalculatorPage(),
+            '/counter': (context) => const CounterPage(),
           },
         );
       },
