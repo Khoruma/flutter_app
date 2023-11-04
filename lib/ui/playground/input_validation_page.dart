@@ -4,8 +4,8 @@ import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
 import 'package:flutter_bootcamp/core/utils/ui_helper.dart';
 import 'package:flutter_bootcamp/ui/widgets/text_form_field.dart';
 
-class InputValidation extends StatelessWidget {
-  const InputValidation({super.key});
+class InputValidationPage extends StatelessWidget {
+  const InputValidationPage({super.key});
 
   @override
   Widget build(BuildContext context) {

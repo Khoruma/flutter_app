@@ -3,8 +3,8 @@ import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
 import 'package:flutter_bootcamp/core/utils/ui_helper.dart';
 import 'package:flutter_bootcamp/ui/widgets/choose_option.dart';
 
-class PlaygroundMenu extends StatelessWidget {
-  const PlaygroundMenu({super.key});
+class PlaygroundMenuPage extends StatelessWidget {
+  const PlaygroundMenuPage({super.key});
 
   @override
   Widget build(BuildContext context) {

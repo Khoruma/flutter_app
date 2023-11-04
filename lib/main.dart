@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/common/theme.dart';
 import 'package:flutter_bootcamp/ui/playground/dummy_ui_next_page.dart';
 import 'package:flutter_bootcamp/ui/playground/dummy_ui_page.dart';
-import 'package:flutter_bootcamp/ui/playground/input_validation.dart';
-import 'package:flutter_bootcamp/ui/playground/playground_menu.dart';
+import 'package:flutter_bootcamp/ui/playground/input_validation_page.dart';
+import 'package:flutter_bootcamp/ui/playground/playground_menu_page.dart';
 import 'package:flutter_bootcamp/ui/playground/playground_splash.dart';
+import 'package:flutter_bootcamp/ui/playground/simple_calculator_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
@@ -25,10 +26,11 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           routes: {
             '/': (context) => const PlaygroundSplash(),
-            '/choose-section': (context) => const PlaygroundMenu(),
+            '/choose-section': (context) => const PlaygroundMenuPage(),
             '/dummy-ui': (context) => const DummyUiPage(),
             '/dummy-ui-next': (context) => const DummyUiNextPage(),
-            '/input-validation': (context) => const InputValidation(),
+            '/input-validation': (context) => const InputValidationPage(),
+            '/simple-calculator': (context) => const SimpleCalculatorPage(),
           },
         );
       },
