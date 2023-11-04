@@ -89,68 +89,85 @@ class PlaygroundMenuPage extends StatelessWidget {
                                   style: context.textTheme.headlineMedium,
                                 ),
                                 UIHelper.verticalSpace(20),
-                                Container(
-                                  padding: UIHelper.padding(left: 20),
-                                  width: double.infinity,
-                                  height: 70,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: ColorConstant.grey,
-                                      width: 0.5,
-                                    ),
-                                    borderRadius:
-                                        UIHelper.borderRadiusCircular(all: 10),
-                                  ),
-                                  child: SvgPicture.asset(
-                                    AssetsPath.pixelNewsLogo,
-                                    fit: BoxFit.scaleDown,
-                                    alignment: Alignment.centerLeft,
-                                  ),
-                                ),
-                                UIHelper.verticalSpace(20),
-                                Container(
-                                  padding: UIHelper.padding(left: 20),
-                                  width: double.infinity,
-                                  height: 70,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: ColorConstant.grey,
-                                      width: 0.5,
-                                    ),
-                                    borderRadius:
-                                        UIHelper.borderRadiusCircular(all: 10),
-                                  ),
-                                  child: Image.asset(
-                                    AssetsPath.playgroundLogo,
-                                    fit: BoxFit.scaleDown,
-                                    alignment: Alignment.centerLeft,
-                                  ),
-                                ),
-                                UIHelper.verticalSpace(20),
-                                Container(
-                                  padding: UIHelper.padding(left: 20),
-                                  width: double.infinity,
-                                  height: 70,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: ColorConstant.grey,
-                                      width: 0.5,
-                                    ),
-                                    borderRadius:
-                                        UIHelper.borderRadiusCircular(all: 10),
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      SvgPicture.asset(
-                                        AssetsPath.restartIcon,
-                                        fit: BoxFit.scaleDown,
-                                        alignment: Alignment.centerLeft,
+                                InkWell(
+                                  child: Container(
+                                    padding: UIHelper.padding(left: 20),
+                                    width: double.infinity,
+                                    height: 70,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: ColorConstant.grey,
+                                        width: 0.5,
                                       ),
-                                      Text(
-                                        'Reset App',
-                                        style: context.textTheme.bodyMedium,
-                                      )
-                                    ],
+                                      borderRadius:
+                                          UIHelper.borderRadiusCircular(
+                                              all: 10),
+                                    ),
+                                    child: SvgPicture.asset(
+                                      AssetsPath.pixelNewsLogo,
+                                      fit: BoxFit.scaleDown,
+                                      alignment: Alignment.centerLeft,
+                                    ),
+                                  ),
+                                ),
+                                UIHelper.verticalSpace(20),
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.pushNamedAndRemoveUntil(context,
+                                        '/PG-splash', (route) => false);
+                                  },
+                                  child: Container(
+                                    padding: UIHelper.padding(left: 20),
+                                    width: double.infinity,
+                                    height: 70,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: ColorConstant.grey,
+                                        width: 0.5,
+                                      ),
+                                      borderRadius:
+                                          UIHelper.borderRadiusCircular(
+                                              all: 10),
+                                    ),
+                                    child: Image.asset(
+                                      AssetsPath.playgroundLogo,
+                                      fit: BoxFit.scaleDown,
+                                      alignment: Alignment.centerLeft,
+                                    ),
+                                  ),
+                                ),
+                                UIHelper.verticalSpace(20),
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.pushNamedAndRemoveUntil(
+                                        context, '/', (route) => false);
+                                  },
+                                  child: Container(
+                                    padding: UIHelper.padding(left: 20),
+                                    width: double.infinity,
+                                    height: 70,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: ColorConstant.grey,
+                                        width: 0.5,
+                                      ),
+                                      borderRadius:
+                                          UIHelper.borderRadiusCircular(
+                                              all: 10),
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        SvgPicture.asset(
+                                          AssetsPath.restartIcon,
+                                          fit: BoxFit.scaleDown,
+                                          alignment: Alignment.centerLeft,
+                                        ),
+                                        Text(
+                                          'Reset App',
+                                          style: context.textTheme.bodyMedium,
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],

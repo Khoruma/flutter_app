@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/common/theme.dart';
+import 'package:flutter_bootcamp/main_page.dart';
 import 'package:flutter_bootcamp/ui/playground/counter_page.dart';
 import 'package:flutter_bootcamp/ui/playground/dummy_ui_next_page.dart';
 import 'package:flutter_bootcamp/ui/playground/dummy_ui_page.dart';
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
           theme: AppTheme.theme,
           debugShowCheckedModeBanner: false,
           routes: {
-            '/': (context) => const PlaygroundSplash(),
+            '/': (context) => const MainPage(),
+            '/PG-splash': (context) => const PlaygroundSplash(),
             '/choose-section': (context) => const PlaygroundMenuPage(),
             '/dummy-ui': (context) => const DummyUiPage(),
             '/dummy-ui-next': (context) => const DummyUiNextPage(),

@@ -108,7 +108,7 @@ class _DummyUiNextPageState extends State<DummyUiNextPage>
                     crossAxisCount: 2,
                     mainAxisSpacing: 20,
                     crossAxisSpacing: 15,
-                    childAspectRatio: 1.6,
+                    childAspectRatio: 1.5,
                     children: card
                         .map((e) => DummySmallCard(
                               title: '',
