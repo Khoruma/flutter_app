@@ -3,8 +3,8 @@ import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
 import 'package:flutter_bootcamp/core/utils/ui_helper.dart';
 import 'package:flutter_bootcamp/ui/widgets/choose_option.dart';
 
-class ChooseSection extends StatelessWidget {
-  const ChooseSection({super.key});
+class PlaygroundMenu extends StatelessWidget {
+  const PlaygroundMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,9 @@ class ChooseSection extends StatelessWidget {
                   title: 'Simple Calculator',
                   subTitle:
                       'Creating calculator app that consists add, divide, substract, multiply function',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/simple-calculator');
+                  },
                 ),
                 UIHelper.divider(height: 70, thickness: 2),
                 ChooseOption(

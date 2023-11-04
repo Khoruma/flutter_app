@@ -45,13 +45,13 @@ class InputValidation extends StatelessWidget {
             SizedBox(
               height: UIHelper.setHeight(40),
             ),
-            TextFormFieldCustom(
+            const TextFormFieldCustom(
               title: 'Name',
             ),
             SizedBox(
               height: UIHelper.setHeight(20),
             ),
-            TextFormFieldCustom(
+            const TextFormFieldCustom(
               title: 'Email',
             ),
           ],
@@ -63,7 +63,7 @@ class InputValidation extends StatelessWidget {
         width: double.infinity,
         child: ElevatedButton(
           onPressed: () {},
-          child: Text('Submit'),
+          child: const Text('Submit'),
         ),
       ),
     );

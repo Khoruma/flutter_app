@@ -18,34 +18,34 @@ class ChooseOption extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          title,
-          style: context.textTheme.headlineMedium!.copyWith(
-            color: ColorConstant.primary,
+    return InkWell(
+      onTap: onTap,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            title,
+            style: context.textTheme.headlineMedium!.copyWith(
+              color: ColorConstant.primary,
+            ),
           ),
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            const SizedBox(height: 5),
-            Expanded(
-              child: Text(
-                subTitle,
-                style: context.textTheme.bodySmall!.copyWith(
-                  color: ColorConstant.grey,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const SizedBox(height: 5),
+              Expanded(
+                child: Text(
+                  subTitle,
+                  style: context.textTheme.bodySmall!.copyWith(
+                    color: ColorConstant.grey,
+                  ),
                 ),
               ),
-            ),
-            InkWell(
-              onTap: onTap,
-              child: const Icon(Icons.arrow_forward_ios_rounded),
-            ),
-          ],
-        ),
-      ],
+              const Icon(Icons.arrow_forward_ios_rounded),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

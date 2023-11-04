@@ -1,15 +1,16 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bootcamp/core/common/assets_path.dart';
 
-class SplashPage extends StatefulWidget {
-  const SplashPage({super.key});
+class PlaygroundSplash extends StatefulWidget {
+  const PlaygroundSplash({super.key});
 
   @override
-  State<SplashPage> createState() => _SplashPageState();
+  State<PlaygroundSplash> createState() => _PlaygroundSplashState();
 }
 
-class _SplashPageState extends State<SplashPage> {
+class _PlaygroundSplashState extends State<PlaygroundSplash> {
   @override
   void initState() {
     Timer(const Duration(seconds: 3), () {
@@ -23,7 +24,7 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset('assets/imgs/playground_splash.png'),
+        child: Image.asset(AssetsPath.playgroundSplash),
       ),
     );
   }
