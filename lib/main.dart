@@ -9,7 +9,8 @@ import 'package:flutter_bootcamp/ui/pixel_app/pixel_home_page.dart';
 import 'package:flutter_bootcamp/ui/pixel_app/pixel_main_page.dart';
 import 'package:flutter_bootcamp/ui/pixel_app/pixel_setting_page.dart';
 import 'package:flutter_bootcamp/ui/pixel_app/pixel_splash_page.dart';
-import 'package:flutter_bootcamp/ui/pixel_app/pixel_top_stories.dart';
+import 'package:flutter_bootcamp/ui/pixel_app/pixel_top_stories_detail_page.dart';
+import 'package:flutter_bootcamp/ui/pixel_app/pixel_top_stories_page.dart';
 import 'package:flutter_bootcamp/ui/playground/counter_page.dart';
 import 'package:flutter_bootcamp/ui/playground/dummy_ui_next_page.dart';
 import 'package:flutter_bootcamp/ui/playground/dummy_ui_page.dart';
@@ -57,6 +58,8 @@ class MyApp extends StatelessWidget {
               '/pixel-collection': (context) => const PixelCollectionPage(),
               '/pixel-setting': (context) => const PixelSettingPage(),
               '/pixel-top': (context) => const PixelTopStoriesPage(),
+              '/pixel-top-detail': (context) =>
+                  const PixelTopStoriesDetailPage(),
             },
           );
         },

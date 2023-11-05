@@ -42,7 +42,9 @@ class PixelTopStoriesPage extends StatelessWidget {
               runSpacing: 10,
               children: [
                 ChipCustom(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/pixel-top-detail');
+                  },
                   title: 'arts',
                 ),
                 ChipCustom(
