@@ -20,7 +20,10 @@ class ChooseAppWidget extends StatelessWidget {
         Text("Choose your app", style: context.textTheme.displayMedium),
         UIHelper.verticalSpace(10),
         InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamedAndRemoveUntil(
+                context, '/pixel-splash', (route) => false);
+          },
           child: Container(
             width: double.infinity,
             alignment: Alignment.centerLeft,
