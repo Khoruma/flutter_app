@@ -31,30 +31,36 @@ class PixelHomePage extends StatelessWidget {
                   style: context.textTheme.bodySmall,
                 ),
                 UIHelper.verticalSpace(10),
-                Container(
-                  width: double.infinity,
-                  height: UIHelper.setHeight(40),
-                  decoration: BoxDecoration(
-                    border: Border.all(color: ColorConstant.primary, width: 1),
-                    borderRadius: UIHelper.borderRadiusCircular(all: 10),
-                  ),
-                  child: Padding(
-                    padding: UIHelper.padding(horizontal: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'Go To Categories Section',
-                          style: context.textTheme.labelSmall?.copyWith(
-                            color: ColorConstant.primary,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/pixel-top');
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    height: UIHelper.setHeight(40),
+                    decoration: BoxDecoration(
+                      border:
+                          Border.all(color: ColorConstant.primary, width: 1),
+                      borderRadius: UIHelper.borderRadiusCircular(all: 10),
+                    ),
+                    child: Padding(
+                      padding: UIHelper.padding(horizontal: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Go To Categories Section',
+                            style: context.textTheme.labelSmall?.copyWith(
+                              color: ColorConstant.primary,
+                            ),
                           ),
-                        ),
-                        Image.asset(
-                          AssetsPath.arrow,
-                          width: UIHelper.setHeight(10),
-                          height: UIHelper.setHeight(12),
-                        )
-                      ],
+                          Image.asset(
+                            AssetsPath.arrow,
+                            width: UIHelper.setHeight(10),
+                            height: UIHelper.setHeight(12),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
