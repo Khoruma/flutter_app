@@ -10,6 +10,7 @@ class DummyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: UIHelper.padding(vertical: 10, horizontal: 10),
+      margin: UIHelper.padding(bottom: 10),
       decoration: BoxDecoration(
         border: Border.all(
           color: ColorConstant.grey,

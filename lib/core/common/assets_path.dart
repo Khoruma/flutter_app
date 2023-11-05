@@ -15,4 +15,5 @@ class AssetsPath {
   static String playgroundLogo = _baseImgPath('playground_logo');
   static String playgroundSplash = _baseImgPath('playground_splash');
   static String boxEmpty = _baseImgPath('box_empty');
+  static String arrow = _baseImgPath('Vector');
 }
