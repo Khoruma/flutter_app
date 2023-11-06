@@ -1,11 +1,14 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/common/assets_path.dart';
 import 'package:flutter_bootcamp/core/common/colors_const.dart';
+import 'package:flutter_bootcamp/core/routes/app_router.gr.dart';
 import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
 import 'package:flutter_bootcamp/core/utils/ui_helper.dart';
 import 'package:flutter_bootcamp/ui/widgets/choose_option.dart';
 import 'package:flutter_svg/svg.dart';
 
+@RoutePage()
 class PlaygroundMenuPage extends StatelessWidget {
   const PlaygroundMenuPage({super.key});
 
@@ -38,7 +41,7 @@ class PlaygroundMenuPage extends StatelessWidget {
                   subTitle:
                       'Practice flutter UI and get familiar with UI Widgets',
                   onTap: () {
-                    Navigator.pushNamed(context, '/dummy-ui');
+                    AutoRouter.of(context).replaceAll([const DummyUiRoute()]);
                   },
                 ),
                 UIHelper.divider(height: 70, thickness: 2),
@@ -47,7 +50,8 @@ class PlaygroundMenuPage extends StatelessWidget {
                   subTitle:
                       'Creating calculator app that consists add, divide, substract, multiply function',
                   onTap: () {
-                    Navigator.pushNamed(context, '/simple-calculator');
+                    AutoRouter.of(context)
+                        .replaceAll([const SimpleCalculatorRoute()]);
                   },
                 ),
                 UIHelper.divider(height: 70, thickness: 2),
@@ -55,7 +59,8 @@ class PlaygroundMenuPage extends StatelessWidget {
                   title: 'Input Validation',
                   subTitle: 'Play around with email input & password input',
                   onTap: () {
-                    Navigator.pushNamed(context, '/input-validation');
+                    AutoRouter.of(context)
+                        .replaceAll([const InputValidationRoute()]);
                   },
                 ),
                 UIHelper.divider(height: 70, thickness: 2),
@@ -90,6 +95,10 @@ class PlaygroundMenuPage extends StatelessWidget {
                                 ),
                                 UIHelper.verticalSpace(20),
                                 InkWell(
+                                  onTap: () {
+                                    AutoRouter.of(context)
+                                        .replaceAll([const PixelSplashRoute()]);
+                                  },
                                   child: Container(
                                     padding: UIHelper.padding(left: 20),
                                     width: double.infinity,
@@ -113,8 +122,8 @@ class PlaygroundMenuPage extends StatelessWidget {
                                 UIHelper.verticalSpace(20),
                                 InkWell(
                                   onTap: () {
-                                    Navigator.pushNamedAndRemoveUntil(context,
-                                        '/PG-splash', (route) => false);
+                                    AutoRouter.of(context)
+                                        .replaceAll([const PlaygroundSplash()]);
                                   },
                                   child: Container(
                                     padding: UIHelper.padding(left: 20),
@@ -139,8 +148,8 @@ class PlaygroundMenuPage extends StatelessWidget {
                                 UIHelper.verticalSpace(20),
                                 InkWell(
                                   onTap: () {
-                                    Navigator.pushNamedAndRemoveUntil(
-                                        context, '/', (route) => false);
+                                    AutoRouter.of(context)
+                                        .replaceAll([const MainRoute()]);
                                   },
                                   child: Container(
                                     padding: UIHelper.padding(left: 20),

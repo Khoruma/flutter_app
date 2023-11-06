@@ -1,11 +1,14 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/common/assets_path.dart';
 import 'package:flutter_bootcamp/core/common/colors_const.dart';
+import 'package:flutter_bootcamp/core/routes/app_router.gr.dart';
 import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
 import 'package:flutter_bootcamp/core/utils/ui_helper.dart';
 import 'package:flutter_bootcamp/ui/widgets/dummy_card.dart';
 import 'package:flutter_svg/svg.dart';
 
+@RoutePage()
 class PixelHomePage extends StatelessWidget {
   const PixelHomePage({super.key});
 
@@ -33,7 +36,8 @@ class PixelHomePage extends StatelessWidget {
                 UIHelper.verticalSpace(10),
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, '/pixel-top');
+                    AutoRouter.of(context)
+                        .replaceAll([const PixelTopStoriesRoute()]);
                   },
                   child: Container(
                     width: double.infinity,

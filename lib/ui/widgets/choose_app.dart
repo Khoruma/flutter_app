@@ -1,6 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/common/assets_path.dart';
 import 'package:flutter_bootcamp/core/common/colors_const.dart';
+import 'package:flutter_bootcamp/core/routes/app_router.gr.dart';
 import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
 import 'package:flutter_bootcamp/core/utils/ui_helper.dart';
 import 'package:flutter_svg/svg.dart';
@@ -21,8 +23,7 @@ class ChooseAppWidget extends StatelessWidget {
         UIHelper.verticalSpace(10),
         InkWell(
           onTap: () {
-            Navigator.pushNamedAndRemoveUntil(
-                context, '/pixel-splash', (route) => false);
+            AutoRouter.of(context).replaceAll([const PixelSplashRoute()]);
           },
           child: Container(
             width: double.infinity,
@@ -41,8 +42,7 @@ class ChooseAppWidget extends StatelessWidget {
         UIHelper.verticalSpace(10),
         InkWell(
           onTap: () {
-            Navigator.pushNamedAndRemoveUntil(
-                context, '/PG-splash', (route) => false);
+            AutoRouter.of(context).replaceAll([const PlaygroundSplash()]);
           },
           child: Container(
             width: double.infinity,
@@ -62,7 +62,7 @@ class ChooseAppWidget extends StatelessWidget {
         if (showResetButton)
           InkWell(
             onTap: () {
-              Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
+              AutoRouter.of(context).replaceAll([const MainRoute()]);
             },
             child: Container(
               width: double.infinity,

@@ -1,9 +1,12 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/common/colors_const.dart';
+import 'package:flutter_bootcamp/core/routes/app_router.gr.dart';
 import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
 import 'package:flutter_bootcamp/core/utils/ui_helper.dart';
 import 'package:flutter_bootcamp/ui/widgets/chip_custom.dart';
 
+@RoutePage()
 class PixelTopStoriesPage extends StatelessWidget {
   const PixelTopStoriesPage({super.key});
 
@@ -13,7 +16,7 @@ class PixelTopStoriesPage extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(context);
+            AutoRouter.of(context).pop();
           },
           icon: Icon(
             Icons.arrow_back_ios_rounded,
@@ -43,7 +46,8 @@ class PixelTopStoriesPage extends StatelessWidget {
               children: [
                 ChipCustom(
                   onTap: () {
-                    Navigator.pushNamed(context, '/pixel-top-detail');
+                    AutoRouter.of(context)
+                        .replaceAll([const PixelTopStoriesDetailRoute()]);
                   },
                   title: 'arts',
                 ),

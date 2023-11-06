@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/common/colors_const.dart';
 import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
@@ -6,6 +7,7 @@ import 'package:flutter_bootcamp/ui/widgets/dummy_card.dart';
 import 'package:flutter_bootcamp/ui/widgets/dummy_small_card.dart';
 import 'package:flutter_bootcamp/ui/widgets/text_form_field.dart';
 
+@RoutePage()
 class PixelExplorePage extends StatefulWidget {
   const PixelExplorePage({super.key});
 

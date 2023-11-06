@@ -1,9 +1,11 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/common/colors_const.dart';
 import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
 import 'package:flutter_bootcamp/core/utils/ui_helper.dart';
 import 'package:flutter_bootcamp/ui/widgets/text_form_field.dart';
 
+@RoutePage()
 class InputValidationPage extends StatelessWidget {
   const InputValidationPage({super.key});
 
@@ -13,7 +15,7 @@ class InputValidationPage extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(context);
+            AutoRouter.of(context).pop();
           },
           icon: Icon(
             Icons.arrow_back_ios_rounded,

@@ -1,8 +1,11 @@
 import 'dart:async';
 
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/common/assets_path.dart';
+import 'package:flutter_bootcamp/core/routes/app_router.gr.dart';
 
+@RoutePage()
 class PlaygroundSplash extends StatefulWidget {
   const PlaygroundSplash({super.key});
 
@@ -14,8 +17,7 @@ class _PlaygroundSplashState extends State<PlaygroundSplash> {
   @override
   void initState() {
     Timer(const Duration(seconds: 3), () {
-      Navigator.pushNamedAndRemoveUntil(
-          context, '/choose-section', (route) => false);
+      AutoRouter.of(context).replaceAll([const PlaygroundMenuRoute()]);
     });
     super.initState();
   }

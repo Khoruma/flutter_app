@@ -1,4 +1,6 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bootcamp/core/routes/app_router.gr.dart';
 import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
 import 'package:flutter_bootcamp/core/utils/ui_helper.dart';
 import 'package:flutter_bootcamp/ui/widgets/choose_option.dart';
@@ -7,6 +9,7 @@ import 'package:flutter_bootcamp/ui/widgets/dummy_small_card.dart';
 import 'package:flutter_bootcamp/ui/widgets/text_form_field.dart';
 import 'package:flutter_bootcamp/ui/widgets/title_green.dart';
 
+@RoutePage()
 class DummyUiPage extends StatelessWidget {
   const DummyUiPage({super.key});
 
@@ -16,7 +19,7 @@ class DummyUiPage extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(context);
+            AutoRouter.of(context).pop();
           },
           icon: Icon(
             Icons.arrow_back_ios_rounded,
@@ -43,7 +46,7 @@ class DummyUiPage extends StatelessWidget {
                 title: 'Next',
                 subTitle: 'Tab Bar, GridView, ListView',
                 onTap: () {
-                  Navigator.pushNamed(context, '/dummy-ui-next');
+                  AutoRouter.of(context).replaceAll([const DummyUiNextRoute()]);
                 },
               ),
               TitleGreen(title: 'Container and Text'),

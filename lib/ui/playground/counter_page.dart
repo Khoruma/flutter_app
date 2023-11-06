@@ -1,7 +1,9 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bootcamp/core/utils/text_theme_extension.dart';
 import 'package:flutter_bootcamp/core/utils/ui_helper.dart';
 
+@RoutePage()
 class CounterPage extends StatelessWidget {
   const CounterPage({super.key});
 
@@ -11,7 +13,7 @@ class CounterPage extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(context);
+            AutoRouter.of(context).pop();
           },
           icon: Icon(
             Icons.arrow_back_ios_rounded,
