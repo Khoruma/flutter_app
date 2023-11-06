@@ -41,7 +41,7 @@ class PlaygroundMenuPage extends StatelessWidget {
                   subTitle:
                       'Practice flutter UI and get familiar with UI Widgets',
                   onTap: () {
-                    AutoRouter.of(context).replaceAll([const DummyUiRoute()]);
+                    AutoRouter.of(context).push(const DummyUiRoute());
                   },
                 ),
                 UIHelper.divider(height: 70, thickness: 2),
@@ -50,8 +50,7 @@ class PlaygroundMenuPage extends StatelessWidget {
                   subTitle:
                       'Creating calculator app that consists add, divide, substract, multiply function',
                   onTap: () {
-                    AutoRouter.of(context)
-                        .replaceAll([const SimpleCalculatorRoute()]);
+                    AutoRouter.of(context).push(const SimpleCalculatorRoute());
                   },
                 ),
                 UIHelper.divider(height: 70, thickness: 2),
@@ -59,8 +58,7 @@ class PlaygroundMenuPage extends StatelessWidget {
                   title: 'Input Validation',
                   subTitle: 'Play around with email input & password input',
                   onTap: () {
-                    AutoRouter.of(context)
-                        .replaceAll([const InputValidationRoute()]);
+                    AutoRouter.of(context).push(const InputValidationRoute());
                   },
                 ),
                 UIHelper.divider(height: 70, thickness: 2),

@@ -46,7 +46,7 @@ class DummyUiPage extends StatelessWidget {
                 title: 'Next',
                 subTitle: 'Tab Bar, GridView, ListView',
                 onTap: () {
-                  AutoRouter.of(context).replaceAll([const DummyUiNextRoute()]);
+                  AutoRouter.of(context).push(const DummyUiNextRoute());
                 },
               ),
               TitleGreen(title: 'Container and Text'),

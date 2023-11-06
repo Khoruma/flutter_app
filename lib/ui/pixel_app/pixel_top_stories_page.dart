@@ -47,7 +47,7 @@ class PixelTopStoriesPage extends StatelessWidget {
                 ChipCustom(
                   onTap: () {
                     AutoRouter.of(context)
-                        .replaceAll([const PixelTopStoriesDetailRoute()]);
+                        .push(const PixelTopStoriesDetailRoute());
                   },
                   title: 'arts',
                 ),

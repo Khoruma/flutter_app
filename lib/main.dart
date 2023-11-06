@@ -1,4 +1,3 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bootcamp/application/navbar/navbar_cubit.dart';
@@ -33,8 +32,6 @@ class MyApp extends StatelessWidget {
             theme: AppTheme.theme,
             debugShowCheckedModeBanner: false,
             routerConfig: router.config(),
-            routerDelegate: AutoRouterDelegate(router),
-            routeInformationParser: router.defaultRouteParser(),
             // routes: {
             //   '/': (context) => const MainPage(),
             //   '/PG-splash': (context) => const PlaygroundSplash(),

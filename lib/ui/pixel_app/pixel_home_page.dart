@@ -36,8 +36,7 @@ class PixelHomePage extends StatelessWidget {
                 UIHelper.verticalSpace(10),
                 InkWell(
                   onTap: () {
-                    AutoRouter.of(context)
-                        .replaceAll([const PixelTopStoriesRoute()]);
+                    AutoRouter.of(context).push(const PixelTopStoriesRoute());
                   },
                   child: Container(
                     width: double.infinity,
