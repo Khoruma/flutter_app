@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bootcamp/application/counter_cubit/counter_cubit.dart';
 import 'package:flutter_bootcamp/application/navbar/navbar_cubit.dart';
 import 'package:flutter_bootcamp/core/common/theme.dart';
 import 'package:flutter_bootcamp/core/injection/injection.dart';
@@ -23,6 +24,9 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(
           create: (context) => NavbarCubit(),
+        ),
+        BlocProvider(
+          create: (context) => CounterCubit(),
         ),
       ],
       child: ScreenUtilInit(
