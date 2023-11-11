@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bootcamp/application/navbar/navbar_cubit.dart';
+import 'package:flutter_bootcamp/application/pixel/navbar/navbar_cubit.dart';
 import 'package:flutter_bootcamp/ui/pixel_app/pixel_collection_page.dart';
 import 'package:flutter_bootcamp/ui/pixel_app/pixel_explore_page.dart';
 import 'package:flutter_bootcamp/ui/pixel_app/pixel_home_page.dart';

@@ -1,13 +1,23 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bootcamp/application/counter_cubit/counter_cubit.dart';
-import 'package:flutter_bootcamp/application/navbar/navbar_cubit.dart';
+import 'package:flutter_bootcamp/application/main_app/main_app_cubit.dart';
+import 'package:flutter_bootcamp/application/pixel/navbar/navbar_cubit.dart';
+import 'package:flutter_bootcamp/application/playground/counter_cubit/counter_cubit.dart';
 import 'package:flutter_bootcamp/core/common/theme.dart';
 import 'package:flutter_bootcamp/core/injection/injection.dart';
 import 'package:flutter_bootcamp/core/routes/app_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hydrated_bloc/hydrated_bloc.dart';
+import 'package:path_provider/path_provider.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  HydratedBloc.storage = await HydratedStorage.build(
+    storageDirectory: kIsWeb
+        ? HydratedStorage.webStorageDirectory
+        : await getTemporaryDirectory(),
+  );
   configureInjection();
   runApp(MyApp());
 }
@@ -27,6 +37,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => CounterCubit(),
+        ),
+        BlocProvider(
+          create: (context) => MainAppCubit(),
         ),
       ],
       child: ScreenUtilInit(

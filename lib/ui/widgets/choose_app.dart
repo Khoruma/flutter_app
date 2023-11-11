@@ -1,5 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bootcamp/application/main_app/main_app_cubit.dart';
 import 'package:flutter_bootcamp/core/common/assets_path.dart';
 import 'package:flutter_bootcamp/core/common/colors_const.dart';
 import 'package:flutter_bootcamp/core/routes/app_router.gr.dart';
@@ -23,6 +25,9 @@ class ChooseAppWidget extends StatelessWidget {
         UIHelper.verticalSpace(10),
         InkWell(
           onTap: () {
+            context
+                .read<MainAppCubit>()
+                .changeApp(const MainAppType.pixelNews());
             AutoRouter.of(context).replaceAll([const PixelSplashRoute()]);
           },
           child: Container(
@@ -42,6 +47,9 @@ class ChooseAppWidget extends StatelessWidget {
         UIHelper.verticalSpace(10),
         InkWell(
           onTap: () {
+            context
+                .read<MainAppCubit>()
+                .changeApp(const MainAppType.playground());
             AutoRouter.of(context).replaceAll([const PlaygroundSplash()]);
           },
           child: Container(
@@ -62,6 +70,7 @@ class ChooseAppWidget extends StatelessWidget {
         if (showResetButton)
           InkWell(
             onTap: () {
+              context.read<MainAppCubit>().changeApp(const MainAppType.none());
               AutoRouter.of(context).replaceAll([const MainRoute()]);
             },
             child: Container(
