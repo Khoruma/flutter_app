@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bootcamp/application/main_app/main_app_cubit.dart';
 import 'package:flutter_bootcamp/application/pixel/navbar/navbar_cubit.dart';
-import 'package:flutter_bootcamp/application/playground/counter_cubit/counter_cubit.dart';
+import 'package:flutter_bootcamp/application/playground/counter/counter_cubit.dart';
+import 'package:flutter_bootcamp/application/playground/input_validator/input_validator_cubit.dart';
 import 'package:flutter_bootcamp/core/common/theme.dart';
 import 'package:flutter_bootcamp/core/injection/injection.dart';
 import 'package:flutter_bootcamp/core/routes/app_router.dart';
@@ -40,6 +41,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => MainAppCubit(),
+        ),
+        BlocProvider(
+          create: (context) => InputValidatorCubit(),
         ),
       ],
       child: ScreenUtilInit(
