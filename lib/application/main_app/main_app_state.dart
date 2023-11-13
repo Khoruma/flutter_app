@@ -19,6 +19,8 @@ class MainAppState with _$MainAppState {
           return const MainAppType.pixelNews();
         case 'playground':
           return const MainAppType.playground();
+        case 'helloWorld':
+          return const MainAppType.helloWorld();
         default:
           return const MainAppType.none();
       }
@@ -35,6 +37,7 @@ class MainAppState with _$MainAppState {
         none: () => 'none',
         pixelNews: () => 'pixelNews',
         playground: () => 'playground',
+        helloWorld: () => 'helloWorld',
       ),
     };
   }
@@ -45,4 +48,5 @@ class MainAppType with _$MainAppType {
   const factory MainAppType.none() = _None;
   const factory MainAppType.pixelNews() = _PixelNews;
   const factory MainAppType.playground() = _Playground;
+  const factory MainAppType.helloWorld() = _HelloWorld;
 }

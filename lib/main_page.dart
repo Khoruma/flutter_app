@@ -17,14 +17,16 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Timer(Duration.zero, () {
       context.read<MainAppCubit>().state.type.when(
-            none: () {},
-            pixelNews: () {
-              AutoRouter.of(context).replaceAll([const PixelSplashRoute()]);
-            },
-            playground: () {
-              AutoRouter.of(context).replaceAll([const PlaygroundSplash()]);
-            },
-          );
+          none: () {},
+          pixelNews: () {
+            AutoRouter.of(context).replaceAll([const PixelSplashRoute()]);
+          },
+          playground: () {
+            AutoRouter.of(context).replaceAll([const PlaygroundSplash()]);
+          },
+          helloWorld: () {
+            AutoRouter.of(context).replaceAll([const HelloWorldRoute()]);
+          });
     });
     return BlocListener<MainAppCubit, MainAppState>(
       listener: (context, state) {
@@ -35,6 +37,9 @@ class MainPage extends StatelessWidget {
           },
           playground: () {
             AutoRouter.of(context).replaceAll([const PlaygroundSplash()]);
+          },
+          helloWorld: () {
+            AutoRouter.of(context).replaceAll([const HelloWorldRoute()]);
           },
         );
       },

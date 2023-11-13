@@ -153,6 +153,7 @@ mixin _$MainAppType {
     required TResult Function() none,
     required TResult Function() pixelNews,
     required TResult Function() playground,
+    required TResult Function() helloWorld,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -160,6 +161,7 @@ mixin _$MainAppType {
     TResult? Function()? none,
     TResult? Function()? pixelNews,
     TResult? Function()? playground,
+    TResult? Function()? helloWorld,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -167,6 +169,7 @@ mixin _$MainAppType {
     TResult Function()? none,
     TResult Function()? pixelNews,
     TResult Function()? playground,
+    TResult Function()? helloWorld,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -175,6 +178,7 @@ mixin _$MainAppType {
     required TResult Function(_None value) none,
     required TResult Function(_PixelNews value) pixelNews,
     required TResult Function(_Playground value) playground,
+    required TResult Function(_HelloWorld value) helloWorld,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -182,6 +186,7 @@ mixin _$MainAppType {
     TResult? Function(_None value)? none,
     TResult? Function(_PixelNews value)? pixelNews,
     TResult? Function(_Playground value)? playground,
+    TResult? Function(_HelloWorld value)? helloWorld,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -189,6 +194,7 @@ mixin _$MainAppType {
     TResult Function(_None value)? none,
     TResult Function(_PixelNews value)? pixelNews,
     TResult Function(_Playground value)? playground,
+    TResult Function(_HelloWorld value)? helloWorld,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -251,6 +257,7 @@ class _$_None implements _None {
     required TResult Function() none,
     required TResult Function() pixelNews,
     required TResult Function() playground,
+    required TResult Function() helloWorld,
   }) {
     return none();
   }
@@ -261,6 +268,7 @@ class _$_None implements _None {
     TResult? Function()? none,
     TResult? Function()? pixelNews,
     TResult? Function()? playground,
+    TResult? Function()? helloWorld,
   }) {
     return none?.call();
   }
@@ -271,6 +279,7 @@ class _$_None implements _None {
     TResult Function()? none,
     TResult Function()? pixelNews,
     TResult Function()? playground,
+    TResult Function()? helloWorld,
     required TResult orElse(),
   }) {
     if (none != null) {
@@ -285,6 +294,7 @@ class _$_None implements _None {
     required TResult Function(_None value) none,
     required TResult Function(_PixelNews value) pixelNews,
     required TResult Function(_Playground value) playground,
+    required TResult Function(_HelloWorld value) helloWorld,
   }) {
     return none(this);
   }
@@ -295,6 +305,7 @@ class _$_None implements _None {
     TResult? Function(_None value)? none,
     TResult? Function(_PixelNews value)? pixelNews,
     TResult? Function(_Playground value)? playground,
+    TResult? Function(_HelloWorld value)? helloWorld,
   }) {
     return none?.call(this);
   }
@@ -305,6 +316,7 @@ class _$_None implements _None {
     TResult Function(_None value)? none,
     TResult Function(_PixelNews value)? pixelNews,
     TResult Function(_Playground value)? playground,
+    TResult Function(_HelloWorld value)? helloWorld,
     required TResult orElse(),
   }) {
     if (none != null) {
@@ -359,6 +371,7 @@ class _$_PixelNews implements _PixelNews {
     required TResult Function() none,
     required TResult Function() pixelNews,
     required TResult Function() playground,
+    required TResult Function() helloWorld,
   }) {
     return pixelNews();
   }
@@ -369,6 +382,7 @@ class _$_PixelNews implements _PixelNews {
     TResult? Function()? none,
     TResult? Function()? pixelNews,
     TResult? Function()? playground,
+    TResult? Function()? helloWorld,
   }) {
     return pixelNews?.call();
   }
@@ -379,6 +393,7 @@ class _$_PixelNews implements _PixelNews {
     TResult Function()? none,
     TResult Function()? pixelNews,
     TResult Function()? playground,
+    TResult Function()? helloWorld,
     required TResult orElse(),
   }) {
     if (pixelNews != null) {
@@ -393,6 +408,7 @@ class _$_PixelNews implements _PixelNews {
     required TResult Function(_None value) none,
     required TResult Function(_PixelNews value) pixelNews,
     required TResult Function(_Playground value) playground,
+    required TResult Function(_HelloWorld value) helloWorld,
   }) {
     return pixelNews(this);
   }
@@ -403,6 +419,7 @@ class _$_PixelNews implements _PixelNews {
     TResult? Function(_None value)? none,
     TResult? Function(_PixelNews value)? pixelNews,
     TResult? Function(_Playground value)? playground,
+    TResult? Function(_HelloWorld value)? helloWorld,
   }) {
     return pixelNews?.call(this);
   }
@@ -413,6 +430,7 @@ class _$_PixelNews implements _PixelNews {
     TResult Function(_None value)? none,
     TResult Function(_PixelNews value)? pixelNews,
     TResult Function(_Playground value)? playground,
+    TResult Function(_HelloWorld value)? helloWorld,
     required TResult orElse(),
   }) {
     if (pixelNews != null) {
@@ -467,6 +485,7 @@ class _$_Playground implements _Playground {
     required TResult Function() none,
     required TResult Function() pixelNews,
     required TResult Function() playground,
+    required TResult Function() helloWorld,
   }) {
     return playground();
   }
@@ -477,6 +496,7 @@ class _$_Playground implements _Playground {
     TResult? Function()? none,
     TResult? Function()? pixelNews,
     TResult? Function()? playground,
+    TResult? Function()? helloWorld,
   }) {
     return playground?.call();
   }
@@ -487,6 +507,7 @@ class _$_Playground implements _Playground {
     TResult Function()? none,
     TResult Function()? pixelNews,
     TResult Function()? playground,
+    TResult Function()? helloWorld,
     required TResult orElse(),
   }) {
     if (playground != null) {
@@ -501,6 +522,7 @@ class _$_Playground implements _Playground {
     required TResult Function(_None value) none,
     required TResult Function(_PixelNews value) pixelNews,
     required TResult Function(_Playground value) playground,
+    required TResult Function(_HelloWorld value) helloWorld,
   }) {
     return playground(this);
   }
@@ -511,6 +533,7 @@ class _$_Playground implements _Playground {
     TResult? Function(_None value)? none,
     TResult? Function(_PixelNews value)? pixelNews,
     TResult? Function(_Playground value)? playground,
+    TResult? Function(_HelloWorld value)? helloWorld,
   }) {
     return playground?.call(this);
   }
@@ -521,6 +544,7 @@ class _$_Playground implements _Playground {
     TResult Function(_None value)? none,
     TResult Function(_PixelNews value)? pixelNews,
     TResult Function(_Playground value)? playground,
+    TResult Function(_HelloWorld value)? helloWorld,
     required TResult orElse(),
   }) {
     if (playground != null) {
@@ -532,4 +556,118 @@ class _$_Playground implements _Playground {
 
 abstract class _Playground implements MainAppType {
   const factory _Playground() = _$_Playground;
+}
+
+/// @nodoc
+abstract class _$$_HelloWorldCopyWith<$Res> {
+  factory _$$_HelloWorldCopyWith(
+          _$_HelloWorld value, $Res Function(_$_HelloWorld) then) =
+      __$$_HelloWorldCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_HelloWorldCopyWithImpl<$Res>
+    extends _$MainAppTypeCopyWithImpl<$Res, _$_HelloWorld>
+    implements _$$_HelloWorldCopyWith<$Res> {
+  __$$_HelloWorldCopyWithImpl(
+      _$_HelloWorld _value, $Res Function(_$_HelloWorld) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_HelloWorld implements _HelloWorld {
+  const _$_HelloWorld();
+
+  @override
+  String toString() {
+    return 'MainAppType.helloWorld()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_HelloWorld);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() none,
+    required TResult Function() pixelNews,
+    required TResult Function() playground,
+    required TResult Function() helloWorld,
+  }) {
+    return helloWorld();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? none,
+    TResult? Function()? pixelNews,
+    TResult? Function()? playground,
+    TResult? Function()? helloWorld,
+  }) {
+    return helloWorld?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? none,
+    TResult Function()? pixelNews,
+    TResult Function()? playground,
+    TResult Function()? helloWorld,
+    required TResult orElse(),
+  }) {
+    if (helloWorld != null) {
+      return helloWorld();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_None value) none,
+    required TResult Function(_PixelNews value) pixelNews,
+    required TResult Function(_Playground value) playground,
+    required TResult Function(_HelloWorld value) helloWorld,
+  }) {
+    return helloWorld(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_None value)? none,
+    TResult? Function(_PixelNews value)? pixelNews,
+    TResult? Function(_Playground value)? playground,
+    TResult? Function(_HelloWorld value)? helloWorld,
+  }) {
+    return helloWorld?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_None value)? none,
+    TResult Function(_PixelNews value)? pixelNews,
+    TResult Function(_Playground value)? playground,
+    TResult Function(_HelloWorld value)? helloWorld,
+    required TResult orElse(),
+  }) {
+    if (helloWorld != null) {
+      return helloWorld(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _HelloWorld implements MainAppType {
+  const factory _HelloWorld() = _$_HelloWorld;
 }

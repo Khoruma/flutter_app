@@ -15,6 +15,7 @@ class AppRouter extends $AppRouter {
     AutoRoute(page: DummyUiRoute.page),
     AutoRoute(page: DummyUiNextRoute.page),
     AutoRoute(page: SimpleCalculatorRoute.page),
+    AutoRoute(page: HelloWorldRoute.page),
 
     //PIXEL
     AutoRoute(page: PixelSplashRoute.page),

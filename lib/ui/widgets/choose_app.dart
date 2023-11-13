@@ -67,6 +67,31 @@ class ChooseAppWidget extends StatelessWidget {
           ),
         ),
         UIHelper.verticalSpace(10),
+        InkWell(
+          onTap: () {
+            context
+                .read<MainAppCubit>()
+                .changeApp(const MainAppType.helloWorld());
+            AutoRouter.of(context).replaceAll([const HelloWorldRoute()]);
+          },
+          child: Container(
+            width: double.infinity,
+            alignment: Alignment.centerLeft,
+            padding: UIHelper.padding(all: 20),
+            decoration: BoxDecoration(
+              border: Border.all(
+                color: ColorConstant.lightGrey,
+                width: 0.5,
+              ),
+              borderRadius: UIHelper.borderRadiusCircular(all: 5),
+            ),
+            child: Text(
+              'Hello World',
+              style: context.textTheme.displayLarge,
+            ),
+          ),
+        ),
+        UIHelper.verticalSpace(10),
         if (showResetButton)
           InkWell(
             onTap: () {
